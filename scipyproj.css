@@ -1,0 +1,323 @@
+/*##CSS gives the web page's appearance and presentation##*/
+
+
+
+/*############## Default ################*/
+
+nav, footer, header {
+    display: block;
+
+}
+/*Block value here added so that nav bar sticks to header and footer*/
+
+body {
+    background-color: #FFFAF0;
+    margin: 0;
+    line-height: 1;
+    font-size: 1em;
+}
+/*Added space between bodt and nav. Margin set so that page sticks to the edge. background color added*/
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%
+}
+/*Padding add space to seperate section.*/
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+/*astra symbol selects all elements within. */
+
+/*css grouping/ All styling the same*/
+
+p {
+    font-family: ariel, serif;
+    font-size: 18px; 
+    word-spacing: 2px;
+    line-height: 2em
+}
+
+article p {
+    font-size: 25px;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    align-content: center;
+    
+}
+/*resized image and added some space between*/
+    
+}
+
+/*########### Navigation bar ###########*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+/*sucks page content to the edge.*/
+
+nav ul {
+    background color: #D3D3D3;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/*nav background color add. Overflow to clip the content with mobile responsive. Extra space and out of order content sucks edge to edge. padding added because of child elements <li> */
+
+ul.topnav li {
+    float: left;
+    list-style: none;
+}
+/*grabbed ul li and class name. list style used to remove bullets because of list items.*/
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+/*bottom two li float to the right side of the browser*/
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    text-transform: uppercase;
+    color:darkgoldenrod;
+}
+/*text size added. line under links removed. link and li in one group. all text capitalized. space between navigation landing pages. text color*/
+
+ul.topnav li a:hover {
+    background-color: #ADD8E6;
+    color: black;
+}
+
+ul.topnav li.dropdownIcon {
+        display: none;
+}
+
+
+
+
+
+/*######### Custom Styles ########*/
+
+
+#section-1-gradient {
+    background: #ADD8E6; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#ADD8E6, #87CEFA); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#ADD8E6, #87CEFA); /*For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#ADD8E6, #87CEFA); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#ADD8E6, #87CEFA); /* Standard syntax */
+}
+/*background color standard for all browsers not supporting gradient. each browser supports colors.*/
+
+div.box {
+    text-align: center;
+    margin: 20px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0.1);
+}
+
+.learnMore {
+    font-size: 32px;
+    font-weight: 700px;
+    padding; 15px 60px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border-radius: 7px;
+    color: white;
+    background-color: #0000CD;		
+}
+
+div.familyIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0,0,0,.15), 2px 2px 17px 2px rgba(0,0,0,1);
+}
+/*box shadow. first value is horizontal second is vertical third is blur fourth is radius fifth is spread RGB() first number is shadow second number is background color third is box color and fourth is opacity*/
+
+}
+
+div.icon {
+    widows: 100%;
+}
+
+.leftSide-col {
+    margin-left: 30%;
+}
+
+.rightSide-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h3 {
+    color: burlywood;
+    font-family: sans-serif, serif;
+    text-shadow: 2px 2px 5px black;
+    line-height: 2rem;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+}
+
+form h2 {
+    color: white;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.videoContainer iframe {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+footer.footBro {
+    background-color: #696969;
+    padding-left: 10%
+}
+
+footer.footBro h1 {
+    color: white;
+    font-size: 40px;
+}
+
+footer.footBro ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer.footBro ul li {
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/*######### Media query-MOBILE #########*/
+/*detects all devices widths*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    h1.section2Header {
+        font-size: 55px;
+    }
+    
+    .col-6, 
+    .col-4, 
+    .col-7, 
+    .col-5 {
+    width: 100%;
+    margin: 0;
+ }
+    
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+    
+    div.familyIcon {
+        margin: 10px;
+    }
+    
+    div.familyIcon img {
+        width: 100%;
+        
+    }
+    
+    div.leftSide-col,
+    div.rightSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"] {
+        width: 350px;
+    }
+}
